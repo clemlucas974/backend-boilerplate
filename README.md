@@ -1,4 +1,4 @@
-![POP CHEF LOGO](../public/LOGO_POPCHEF.svg)
+![POP CHEF LOGO](./public/LOGO_POPCHEF.svg)
 
 # TECHNICAL TEST - FRONTEND
 
