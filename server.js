@@ -57,7 +57,7 @@ const setupWorkerProcesses = () => {
 // Setup an express server and define port to listen all incoming requests for this application
 const setUpExpress = () => {
   dotenv.config({ path: '.env' });
-  
+
   const port = process.env.APP_PORT || 3000;
 
   const server = app.listen(port, () => {
@@ -100,8 +100,8 @@ const setupServer = (isClusterRequired) => {
   }
 };
 
-if (process.env.NODE_ENV === 'production') {
-  setupServer(true);
-} else {
-  setupServer(false);
-}
+// if (process.env.NODE_ENV === 'production') {
+//   setupServer(true);
+// } else {
+setupServer(false);
+// }
