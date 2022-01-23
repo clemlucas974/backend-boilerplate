@@ -7,10 +7,10 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      firstName: {
+      first_name: {
         type: Sequelize.STRING,
       },
-      lastName: {
+      last_name: {
         type: Sequelize.STRING,
       },
       email: {
@@ -19,18 +19,18 @@ module.exports = {
       password: {
         type: Sequelize.STRING,
       },
-      profilePic: {
+      profile_pic: {
         type: Sequelize.STRING,
       },
-      isAdmin: {
+      is_admin: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
       },
-      createdAt: {
+      created_at: {
         allowNull: false,
         type: Sequelize.DATE,
       },
-      updatedAt: {
+      updated_at: {
         allowNull: false,
         type: Sequelize.DATE,
       },

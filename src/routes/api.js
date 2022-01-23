@@ -13,7 +13,7 @@ router.get('/me', userController.profile);
 router.post(
   '/changePassword',
   validate(userValidator.changePassword),
-  userController.changePassword,
+  userController.changePassword
 );
 
 module.exports = router;

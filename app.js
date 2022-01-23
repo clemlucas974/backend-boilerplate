@@ -18,13 +18,13 @@ const app = express();
 app.use(
   bodyParser.urlencoded({
     extended: true,
-  }),
+  })
 );
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use('/pub', publicRoutes);
-app.use('/api', apiMiddleware, apiRoutes);
+app.use('/api', publicRoutes);
+app.use('/api/user', apiMiddleware, apiRoutes);
 app.use('/api/admin', apiMiddleware, adminMiddleware, adminRoutes);
 app.use(errorHandler);
 

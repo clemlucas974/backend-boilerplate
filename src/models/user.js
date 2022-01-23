@@ -1,8 +1,6 @@
-
-
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
-    'User',
+    'user',
     {
       firstName: {
         type: DataTypes.STRING,
@@ -43,7 +41,7 @@ module.exports = (sequelize, DataTypes) => {
           attributes: { include: ['password', 'verifyToken', 'isAdmin'] },
         },
       },
-    },
+    }
   );
   User.associate = function (models) {
     // associations can be defined here
