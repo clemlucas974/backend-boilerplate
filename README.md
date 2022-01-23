@@ -55,8 +55,8 @@ DB_PORT=3306                    # database port
 some other inportant parameters/keys in **.env** file
 
 ```
-APP_HOST=localhost      # application host name
-APP_PORT=3000           # application port
+HOST=localhost      # application host name
+PORT=3000           # application port
 SECRET=secret           # secret key for encrypt/decrypt JWT token
 ```
 
