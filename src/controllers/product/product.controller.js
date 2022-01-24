@@ -42,7 +42,7 @@ export const createProduct = async (req, res) => {
     title: req.body.title,
     subtitle: req.body.subtitle,
     description: req.body.description,
-    image_url: req.body.imageUrl,
+    image_url: req.body.image_url,
   };
 
   try {

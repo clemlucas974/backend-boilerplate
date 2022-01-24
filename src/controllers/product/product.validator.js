@@ -5,7 +5,7 @@ export const createProduct = {
     title: Joi.string().required(),
     subtitle: Joi.string().required(),
     description: Joi.string().required(),
-    imageUrl: Joi.string().required(),
+    image_url: Joi.string().required(),
   },
 };
 
@@ -14,6 +14,6 @@ export const udpateProduct = {
     title: Joi.string(),
     subtitle: Joi.string(),
     description: Joi.string(),
-    imageUrl: Joi.string(),
+    image_url: Joi.string(),
   },
 };
