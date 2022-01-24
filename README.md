@@ -74,6 +74,7 @@ GOOGLE_CAPTCHA_URL=https://www.google.com/recaptcha/api/siteverify
 After creating database and updating .env file run below commands
 
 ```
+> make up
 > node_modules/.bin/sequelize db:migrate
 > node_modules/.bin/sequelize db:seed:all
 ```
@@ -99,6 +100,10 @@ Migration will create table users and seed some default users
 > node_modules/.bin/sequelize seed:generate --name demo-user
 ```
 
+## Deployment
+
+Project is automatically deploying to Heroku instance when pushing to main branch: https://clucas-popchef-backend.herokuapp.com/
+
 ## Git/Bitbucket Setup
 
 ```
@@ -117,67 +122,14 @@ Migration will create table users and seed some default users
 > Currently we have added 3 routing files
 
 ```
-> pub.js   # public routing access everyone can access this APIs
+> public.js   # public routing access everyone can access this APIs
 > api.js   # only logged in user/ with vaild token user can access this routes
 > admin.js # only admin can access with valid token
 ```
 
-## Example APIs
+### API
 
-> here attached link of postman collection you can download and check in local
-> https://www.getpostman.com/collections/4d415740f37a864d9afc
-
-### Login
-
-```
-> POST : http:localhost:8000/pub/login
-> Payload: email, password
-> Response :
-{
-    "code": 200,
-    "data": {
-        "user": {
-            "id": 1,
-            "firstName": "Admin",
-            "lastName": "User",
-            "email": "admin@gmail.com",
-            "profilePic": null,
-            "isAdmin": true,
-            "verifyToken": null,
-            "isVerified": true,
-            "createdAt": "2019-05-27T07:15:12.000Z",
-            "updatedAt": "2019-05-27T07:15:12.000Z"
-        },
-        "token": "secret token"
-    },
-    "success": true
-}
-```
-
-### Get user
-
-```
-> GET : http:localhost:8000/api/me
-> Headers :
-        x-token (access token)
-> Response :
-{
-    "code": 200,
-    "data": {
-        "user": {
-            "id": 1,
-            "firstName": "Admin",
-            "lastName": "User",
-            "email": "admin@gmail.com",
-            "profilePic": null,
-            "isVerified": true,
-            "createdAt": "2019-05-27T07:15:12.000Z",
-            "updatedAt": "2019-05-27T07:15:12.000Z"
-        }
-    },
-    "success": true
-}
-```
+TODO
 
 ### Success Response
 
@@ -200,14 +152,3 @@ Migration will create table users and seed some default users
     "data": null
 }
 ```
-
-### Upcoming update
-
-```
-> suggestions and improvements are most welcome
-```
-
-### Contact
-
-- Follow [@me](https://twitter.com/binitghetiya) on Twitter
-- Email <binitlearning@gmail.com>
