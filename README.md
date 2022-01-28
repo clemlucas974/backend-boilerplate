@@ -1,5 +1,3 @@
-![POP CHEF LOGO](./public/LOGO_POPCHEF.svg)
-
 # TECHNICAL TEST - FRONTEND
 
 This is project is based on a simple boilerplate for creating APIs with NodeJs express framework.
@@ -47,7 +45,7 @@ so in my **.env** file will set below parameters.
 DB_HOST=localhost               # database connection host
 DB_USER=root                    # database username
 DB_PASS=root                    # database password
-DB_NAME=popchef                 # database name
+DB_NAME=database                # database name
 DB_DIALECT=mysql                # database dialect
 DB_PORT=3306                    # database port
 ```
@@ -102,7 +100,7 @@ Migration will create table users and seed some default users
 
 ## Deployment
 
-Project is automatically deploying to Heroku instance when pushing to main branch: https://clucas-popchef-backend.herokuapp.com/
+Project is automatically deploying to Heroku instance when pushing to main branch
 
 ## Git/Bitbucket Setup
 
